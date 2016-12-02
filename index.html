@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr" xml:lang="fr" xmls="http://www.w3c.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body ng-app="todo">
+
+<section id="todoapp" ng-controller="TodoCtrl">
+    <header id="header">
+        <h1>Todolist</h1>
+        <form action="#" id="todo-form" ng-submit="addTodo()">
+            <input type="text" id="new-todo" placeholder="Nouvelle tâche" autofocus autocomplete="off" ng-model="newtodo">
+        </form>
+    </header>
+    <section id="main">
+        <input type="checkbox" id="toggle-all" ng-model="allchecked" ng-click="checkAllTodo(allchecked)">
+        <input type="submit" class="destroy" value="Tout supprimer" ng-model="allchecked" ng-click="destroyAll($index)">
+
+        <ul id="todo-list">
+            <!--oderBy = ordonne la liste  filter =  filtré grace à la variable statusFilter-->
+            <li ng-repeat="todo in todos | orderBy: 'completed'  " ng-class="{completed : todo.completed, editing: todo.editing}" ng-dblclick="todo.editing = true">
+                <div class="view">
+                    <input type="checkbox" class="toggle" ng-model="todo.completed">
+                    <label>{{todo.name}}</label>
+                    <div ng-class="class"  ng-click="changeClass()"></div>
+                    <button class="destroy" ng-click="removeTodo($index)"></button>
+                </div>
+                <form action="#">
+                    <input class="edit" ng-model="todo.name" ng-blur="editTodo(todo)">
+                </form>
+            </li>
+        </ul>
+    </section>
+
+    <footer id="footer">
+        <span id="todo-count"><strong>{{remaining}}</strong> Tâches restantes</span>
+    </footer>
+</section>
+
+<script type="text/javascript" src="angular-1.0.3/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

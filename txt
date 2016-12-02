@@ -1,0 +1,38 @@
+j'ai repris le css qui exister ( j'ai suivie un idétoriel)
+j'ai crée les diférente fonctionnalité du programme (liste de tache)
+je les fais avec engular js ( je voulais essayer ce framework)
+je voulais réécrie css pour le transformer en sass
+j'ai préféré me concentrée sur la liste de tache quite a reprendre le css d'un tuto
+j'ai fait la fonctionnalité de modifier les taches existante
+ainsi qu'une fonction pour triée les taches en mettent en haut de la liste les taches non escécuter ( non faite)
+
+pas fini ou terminée:
+pas terminée: la fonction des taches importante qui permettent de mettre en valeurs les taches important ( étoile)
+j'arrive a sélectionner tout les taches mes pas a en selectionner qu"une seule ( celle demander)
+j'ai pas fais la liste des sous taches car j'ai préféré me concentrée sur l'élement important qui est ( vus au-dessus)
+
+
+
+Bonsoir Karim,
+
+J'ai réussi à créer la todolist avec AngularJS 1.0.3.
+
+C'est différente fonctionnalités sont :
+
+- Ajouter
+- Suppression d'une tâche
+- Suppression de l'ensemble les tâches
+- Tris des tâches Finit / non-finit
+- Compteur de tâches
+- Selection de l'ensemble des tâches qui sont terminer
+- Selection une tâche qui est terminer
+- Aucune sauvegarde ou utilisation de données (auto-complétion)
+
+
+Fonctionnalités à terminer :
+
+- Tâches importantes (selectionne toutes les tâches pas une seule)
+- Ajout de sous tâches sur 3 niveaux
+- Refaire le CSS en SASS pour utiliser Grunt
+
+

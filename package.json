@@ -1,0 +1,23 @@
+{
+  "name": "todolist",
+  "version": "4.4.5",
+  "description": "Todolist Sowefund",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisMasot/Todolist_Sowefund.git"
+  },
+  "author": "Denis Masot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisMasot/Todolist_Sowefund/issues"
+  },
+  "homepage": "https://github.com/DenisMasot/Todolist_Sowefund#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
